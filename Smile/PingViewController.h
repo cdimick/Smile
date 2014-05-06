@@ -7,7 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DataClass.h"
 
-@interface PingViewController : UIViewController
+@interface PingViewController : UIViewController{
+    NSMutableArray *userPings;
+}
+
+@property (weak, nonatomic) IBOutlet UIButton *ping;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+
+
+- (IBAction)sendPing:(id)sender;
 
 @end

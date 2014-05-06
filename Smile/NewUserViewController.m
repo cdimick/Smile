@@ -1,18 +1,20 @@
 //
-//  LoginViewController.m
+//  NewUserViewController.m
 //  Smile
 //
-//  Created by Christopher Dimick on 3/9/14.
+//  Created by Christopher Dimick on 4/20/14.
 //  Copyright (c) 2014 Christopher Dimick. All rights reserved.
 //
 
-#import "LoginViewController.h"
+#import "NewUserViewController.h"
+#import <Parse/Parse.h>
+#import "DataClass.h"
 
-@interface LoginViewController ()
+@interface NewUserViewController ()
 
 @end
 
-@implementation LoginViewController
+@implementation NewUserViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -37,34 +39,33 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
- * Logs the user in. Checks Parse if the username and password is in the database. If not, error is received.
- */
-- (IBAction)login:(id)sender {
-    [PFUser logInWithUsernameInBackground:self.userName.text password:self.password.text block:^(PFUser *user, NSError *error) {
-        if (user) {
-            // Do stuff after successful login.
-            NSLog(@"Congrats you logged in dude");
+- (IBAction)submit:(id)sender {
+    PFUser *user = [PFUser user];
+    user.username = self.userName.text;
+    user.password = self.password.text;
+    PFGeoPoint *point = [PFGeoPoint geoPointWithLatitude:40.1 longitude:-32.0];
+    user[@"location"] = point;
+    user[@"karmaScore"] = @0;
+    user[@"pings"] = [[NSMutableArray alloc] init];
+    
+    [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        if (!error) {
+            // Hooray! Let them use the app now.
+            NSLog(@"You're logged in!");
             DataClass *obj = [DataClass getInstance];
-            obj.USERNAME = self.userName.text;
+            obj.USERNAME = user[@"username"];
             obj.LOCATION = user[@"location"];
             NSLog(@"latitdue:%f longitude:%f", obj.LOCATION.latitude, obj.LOCATION.longitude);
-            [self performSegueWithIdentifier:@"loggingIn" sender:nil];
+            [self performSegueWithIdentifier:@"createNew" sender:nil];
         } else {
             NSString *errorString = [error userInfo][@"error"];
             // Show the errorString somewhere and let the user try again.
             NSLog(@"%@", errorString);
-            [self.label setText:@"Invalid username/password"];
+            [self.label setText:@"Username already taken"];
             self.label.textColor = [UIColor redColor];
             self.label.textAlignment = NSTextAlignmentCenter;
         }
     }];
-}
-
-/*
- * Simply redirects user to the Create New User View Controller
- */
-- (IBAction)createUser:(id)sender {
 }
 
 - (IBAction)backgroundTap:(id)sender {
@@ -76,5 +77,6 @@
     [textField resignFirstResponder];
     return YES;
 }
+
 
 @end

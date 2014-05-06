@@ -7,6 +7,7 @@
 //
 
 #import "CameraViewController.h"
+#import <MobileCoreServices/MobileCoreServices.h>
 
 @interface CameraViewController ()
 
@@ -19,6 +20,10 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        if(![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]){
+            NSLog(@"Error source type not available");
+        }
+        self.mediaTypes = [[NSArray alloc] initWithObjects: (NSString *) kUTTypeImage, nil];
     }
     return self;
 }
@@ -34,5 +39,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 @end

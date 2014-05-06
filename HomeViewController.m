@@ -26,7 +26,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.navigationItem.hidesBackButton = YES;
 	// Do any additional setup after loading the view.
+    DataClass *obj = [DataClass getInstance];
+    NSLog(obj.USERNAME);
 }
 
 - (void)didReceiveMemoryWarning

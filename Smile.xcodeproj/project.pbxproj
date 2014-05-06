@@ -7,6 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		421E2D8F1900443100D2A3EB /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 421E2D8E1900443100D2A3EB /* Parse.framework */; };
+		421E2D911900444E00D2A3EB /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 421E2D901900444E00D2A3EB /* Parse.framework */; };
+		421E2D931900448700D2A3EB /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 421E2D921900448700D2A3EB /* AudioToolbox.framework */; };
+		421E2D951900449100D2A3EB /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 421E2D941900449100D2A3EB /* CFNetwork.framework */; };
+		421E2D97190044A700D2A3EB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 421E2D96190044A700D2A3EB /* CoreLocation.framework */; };
+		421E2D99190044BE00D2A3EB /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 421E2D98190044BE00D2A3EB /* libz.dylib */; };
+		421E2D9B190044D700D2A3EB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 421E2D9A190044D700D2A3EB /* QuartzCore.framework */; };
+		421E2D9D190044E200D2A3EB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 421E2D9C190044E200D2A3EB /* Security.framework */; };
+		421E2D9F190044EC00D2A3EB /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 421E2D9E190044EC00D2A3EB /* StoreKit.framework */; };
+		421E2DA1190044F500D2A3EB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 421E2DA0190044F500D2A3EB /* SystemConfiguration.framework */; };
+		4233B1A71904388100432E71 /* NewUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4233B1A61904388100432E71 /* NewUserViewController.m */; };
+		4233B1AB1904449300432E71 /* DataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 4233B1AA1904449300432E71 /* DataClass.m */; };
+		423417C618D210CC0086682B /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 423417C518D210CC0086682B /* HomeViewController.m */; };
+		423417C918D217640086682B /* PingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 423417C818D217640086682B /* PingViewController.m */; };
+		423417CC18D217870086682B /* PicsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 423417CB18D217870086682B /* PicsViewController.m */; };
+		423417CF18D217CA0086682B /* PicMeUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 423417CE18D217CA0086682B /* PicMeUpViewController.m */; };
+		423417D218D218370086682B /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 423417D118D218370086682B /* ProfileViewController.m */; };
+		4267FFE91919759F0068FEA1 /* Ping.m in Sources */ = {isa = PBXBuildFile; fileRef = 4267FFE81919759F0068FEA1 /* Ping.m */; };
+		42B2CCF218E5F20500A77C3E /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B2CCF118E5F20500A77C3E /* MobileCoreServices.framework */; };
+		42B2CCF518E5F67A00A77C3E /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B2CCF418E5F67A00A77C3E /* CameraViewController.m */; };
 		42CC8D9818CCE3F100E2CCAB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42CC8D9718CCE3F100E2CCAB /* Foundation.framework */; };
 		42CC8D9A18CCE3F100E2CCAB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42CC8D9918CCE3F100E2CCAB /* CoreGraphics.framework */; };
 		42CC8D9C18CCE3F100E2CCAB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42CC8D9B18CCE3F100E2CCAB /* UIKit.framework */; };
@@ -22,6 +42,7 @@
 		42CC8DBC18CCE3F100E2CCAB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42CC8D9B18CCE3F100E2CCAB /* UIKit.framework */; };
 		42CC8DC418CCE3F100E2CCAB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42CC8DC218CCE3F100E2CCAB /* InfoPlist.strings */; };
 		42CC8DC618CCE3F100E2CCAB /* SmileTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CC8DC518CCE3F100E2CCAB /* SmileTests.m */; };
+		42CC8DD118CCE5AC00E2CCAB /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CC8DD018CCE5AC00E2CCAB /* LoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +56,35 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		421E2D8E1900443100D2A3EB /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = ../../Downloads/Parse.framework; sourceTree = "<group>"; };
+		421E2D901900444E00D2A3EB /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		421E2D921900448700D2A3EB /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		421E2D941900449100D2A3EB /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		421E2D96190044A700D2A3EB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		421E2D98190044BE00D2A3EB /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		421E2D9A190044D700D2A3EB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		421E2D9C190044E200D2A3EB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		421E2D9E190044EC00D2A3EB /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		421E2DA0190044F500D2A3EB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		4233B1A51904388100432E71 /* NewUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewUserViewController.h; sourceTree = "<group>"; };
+		4233B1A61904388100432E71 /* NewUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewUserViewController.m; sourceTree = "<group>"; };
+		4233B1A91904449300432E71 /* DataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataClass.h; path = ../DataClass.h; sourceTree = "<group>"; };
+		4233B1AA1904449300432E71 /* DataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataClass.m; path = ../DataClass.m; sourceTree = "<group>"; };
+		423417C418D210CC0086682B /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewController.h; path = ../HomeViewController.h; sourceTree = "<group>"; };
+		423417C518D210CC0086682B /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = ../HomeViewController.m; sourceTree = "<group>"; };
+		423417C718D217640086682B /* PingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PingViewController.h; sourceTree = "<group>"; };
+		423417C818D217640086682B /* PingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PingViewController.m; sourceTree = "<group>"; };
+		423417CA18D217870086682B /* PicsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicsViewController.h; sourceTree = "<group>"; };
+		423417CB18D217870086682B /* PicsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PicsViewController.m; sourceTree = "<group>"; };
+		423417CD18D217CA0086682B /* PicMeUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicMeUpViewController.h; sourceTree = "<group>"; };
+		423417CE18D217CA0086682B /* PicMeUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PicMeUpViewController.m; sourceTree = "<group>"; };
+		423417D018D218370086682B /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		423417D118D218370086682B /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		4267FFE71919759F0068FEA1 /* Ping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ping.h; sourceTree = "<group>"; };
+		4267FFE81919759F0068FEA1 /* Ping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ping.m; sourceTree = "<group>"; };
+		42B2CCF118E5F20500A77C3E /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		42B2CCF318E5F67A00A77C3E /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CameraViewController.h; path = ../CameraViewController.h; sourceTree = "<group>"; };
+		42B2CCF418E5F67A00A77C3E /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CameraViewController.m; path = ../CameraViewController.m; sourceTree = "<group>"; };
 		42CC8D9418CCE3F100E2CCAB /* Smile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42CC8D9718CCE3F100E2CCAB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		42CC8D9918CCE3F100E2CCAB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -55,6 +105,8 @@
 		42CC8DC118CCE3F100E2CCAB /* SmileTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SmileTests-Info.plist"; sourceTree = "<group>"; };
 		42CC8DC318CCE3F100E2CCAB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		42CC8DC518CCE3F100E2CCAB /* SmileTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmileTests.m; sourceTree = "<group>"; };
+		42CC8DCF18CCE5AC00E2CCAB /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		42CC8DD018CCE5AC00E2CCAB /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +114,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				421E2DA1190044F500D2A3EB /* SystemConfiguration.framework in Frameworks */,
+				421E2D9F190044EC00D2A3EB /* StoreKit.framework in Frameworks */,
+				421E2D9D190044E200D2A3EB /* Security.framework in Frameworks */,
+				421E2D9B190044D700D2A3EB /* QuartzCore.framework in Frameworks */,
+				42B2CCF218E5F20500A77C3E /* MobileCoreServices.framework in Frameworks */,
+				421E2D99190044BE00D2A3EB /* libz.dylib in Frameworks */,
+				421E2D97190044A700D2A3EB /* CoreLocation.framework in Frameworks */,
 				42CC8D9A18CCE3F100E2CCAB /* CoreGraphics.framework in Frameworks */,
+				421E2D951900449100D2A3EB /* CFNetwork.framework in Frameworks */,
+				421E2D931900448700D2A3EB /* AudioToolbox.framework in Frameworks */,
 				42CC8D9C18CCE3F100E2CCAB /* UIKit.framework in Frameworks */,
 				42CC8D9818CCE3F100E2CCAB /* Foundation.framework in Frameworks */,
+				421E2D911900444E00D2A3EB /* Parse.framework in Frameworks */,
+				421E2D8F1900443100D2A3EB /* Parse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +166,17 @@
 		42CC8D9618CCE3F100E2CCAB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				421E2DA0190044F500D2A3EB /* SystemConfiguration.framework */,
+				421E2D9E190044EC00D2A3EB /* StoreKit.framework */,
+				421E2D9C190044E200D2A3EB /* Security.framework */,
+				421E2D9A190044D700D2A3EB /* QuartzCore.framework */,
+				421E2D98190044BE00D2A3EB /* libz.dylib */,
+				421E2D96190044A700D2A3EB /* CoreLocation.framework */,
+				421E2D941900449100D2A3EB /* CFNetwork.framework */,
+				421E2D921900448700D2A3EB /* AudioToolbox.framework */,
+				421E2D901900444E00D2A3EB /* Parse.framework */,
+				421E2D8E1900443100D2A3EB /* Parse.framework */,
+				42B2CCF118E5F20500A77C3E /* MobileCoreServices.framework */,
 				42CC8D9718CCE3F100E2CCAB /* Foundation.framework */,
 				42CC8D9918CCE3F100E2CCAB /* CoreGraphics.framework */,
 				42CC8D9B18CCE3F100E2CCAB /* UIKit.framework */,
@@ -114,9 +188,29 @@
 		42CC8D9D18CCE3F100E2CCAB /* Smile */ = {
 			isa = PBXGroup;
 			children = (
+				4233B1A91904449300432E71 /* DataClass.h */,
+				4233B1AA1904449300432E71 /* DataClass.m */,
+				423417C418D210CC0086682B /* HomeViewController.h */,
+				423417C518D210CC0086682B /* HomeViewController.m */,
 				42CC8DA618CCE3F100E2CCAB /* AppDelegate.h */,
+				42B2CCF318E5F67A00A77C3E /* CameraViewController.h */,
+				42B2CCF418E5F67A00A77C3E /* CameraViewController.m */,
 				42CC8DA718CCE3F100E2CCAB /* AppDelegate.m */,
 				42CC8DA918CCE3F100E2CCAB /* Main_iPhone.storyboard */,
+				4267FFE71919759F0068FEA1 /* Ping.h */,
+				4267FFE81919759F0068FEA1 /* Ping.m */,
+				4233B1A51904388100432E71 /* NewUserViewController.h */,
+				4233B1A61904388100432E71 /* NewUserViewController.m */,
+				423417D018D218370086682B /* ProfileViewController.h */,
+				423417D118D218370086682B /* ProfileViewController.m */,
+				423417CD18D217CA0086682B /* PicMeUpViewController.h */,
+				423417CE18D217CA0086682B /* PicMeUpViewController.m */,
+				423417CA18D217870086682B /* PicsViewController.h */,
+				423417CB18D217870086682B /* PicsViewController.m */,
+				423417C718D217640086682B /* PingViewController.h */,
+				423417C818D217640086682B /* PingViewController.m */,
+				42CC8DCF18CCE5AC00E2CCAB /* LoginViewController.h */,
+				42CC8DD018CCE5AC00E2CCAB /* LoginViewController.m */,
 				42CC8DAC18CCE3F100E2CCAB /* Main_iPad.storyboard */,
 				42CC8DAF18CCE3F100E2CCAB /* ViewController.h */,
 				42CC8DB018CCE3F100E2CCAB /* ViewController.m */,
@@ -202,6 +296,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Christopher Dimick";
 				TargetAttributes = {
+					42CC8D9318CCE3F100E2CCAB = {
+						DevelopmentTeam = LREP6XNG36;
+					};
 					42CC8DB718CCE3F100E2CCAB = {
 						TestTargetID = 42CC8D9318CCE3F100E2CCAB;
 					};
@@ -253,8 +350,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4267FFE91919759F0068FEA1 /* Ping.m in Sources */,
+				42CC8DD118CCE5AC00E2CCAB /* LoginViewController.m in Sources */,
+				423417D218D218370086682B /* ProfileViewController.m in Sources */,
+				4233B1A71904388100432E71 /* NewUserViewController.m in Sources */,
 				42CC8DB118CCE3F100E2CCAB /* ViewController.m in Sources */,
 				42CC8DA818CCE3F100E2CCAB /* AppDelegate.m in Sources */,
+				423417C618D210CC0086682B /* HomeViewController.m in Sources */,
+				4233B1AB1904449300432E71 /* DataClass.m in Sources */,
+				42B2CCF518E5F67A00A77C3E /* CameraViewController.m in Sources */,
+				423417CF18D217CA0086682B /* PicMeUpViewController.m in Sources */,
+				423417CC18D217870086682B /* PicsViewController.m in Sources */,
+				423417C918D217640086682B /* PingViewController.m in Sources */,
 				42CC8DA418CCE3F100E2CCAB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -392,10 +499,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/afs/cs.wisc.edu/u/c/d/cdimick/Downloads,
+					/afs/cs.wisc.edu/u/c/d/cdimick/Desktop/Smile,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Smile/Smile-Prefix.pch";
 				INFOPLIST_FILE = "Smile/Smile-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -405,10 +520,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/afs/cs.wisc.edu/u/c/d/cdimick/Downloads,
+					/afs/cs.wisc.edu/u/c/d/cdimick/Desktop/Smile,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Smile/Smile-Prefix.pch";
 				INFOPLIST_FILE = "Smile/Smile-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -474,6 +597,7 @@
 				42CC8DCB18CCE3F100E2CCAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		42CC8DCC18CCE3F100E2CCAB /* Build configuration list for PBXNativeTarget "SmileTests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +606,7 @@
 				42CC8DCE18CCE3F100E2CCAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
