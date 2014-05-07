@@ -46,10 +46,10 @@
                 [obj.USERPINGS addObject:ping];
                  */
                 NSLog(@"userPings: %@", obj.USERPINGS);
-                PFObject *aPing = [PFObject objectWithClassName:@"Ping"];
-                aPing[@"sentUser"] = object[@"sentUser"];
-                aPing[@"targetUser"] = object[@"targetUser"];
-                aPing[@"date"] = object[@"date"];
+                NSMutableDictionary *aPing = [[NSMutableDictionary alloc]init];
+                [aPing setValue:object[@"sentUser"] forKey:@"sentUser"];
+                [aPing setValue:object[@"targetUser"] forKey:@"targetUser"];
+                [aPing setValue:object[@"date"] forKey:@"date"];
                 [obj.USERPINGS addObject:aPing];
                 PFUser *currentUser = [PFUser currentUser];
                 [currentUser addObject:aPing forKey:@"pings"];

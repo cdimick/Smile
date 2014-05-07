@@ -25,6 +25,7 @@
 		423417CF18D217CA0086682B /* PicMeUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 423417CE18D217CA0086682B /* PicMeUpViewController.m */; };
 		423417D218D218370086682B /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 423417D118D218370086682B /* ProfileViewController.m */; };
 		4267FFE91919759F0068FEA1 /* Ping.m in Sources */ = {isa = PBXBuildFile; fileRef = 4267FFE81919759F0068FEA1 /* Ping.m */; };
+		427A1E96191AC6D3006C19BB /* ResponseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 427A1E95191AC6D3006C19BB /* ResponseViewController.m */; };
 		42B2CCF218E5F20500A77C3E /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B2CCF118E5F20500A77C3E /* MobileCoreServices.framework */; };
 		42B2CCF518E5F67A00A77C3E /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B2CCF418E5F67A00A77C3E /* CameraViewController.m */; };
 		42CC8D9818CCE3F100E2CCAB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42CC8D9718CCE3F100E2CCAB /* Foundation.framework */; };
@@ -82,6 +83,8 @@
 		423417D118D218370086682B /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 		4267FFE71919759F0068FEA1 /* Ping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ping.h; sourceTree = "<group>"; };
 		4267FFE81919759F0068FEA1 /* Ping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ping.m; sourceTree = "<group>"; };
+		427A1E94191AC6D3006C19BB /* ResponseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResponseViewController.h; sourceTree = "<group>"; };
+		427A1E95191AC6D3006C19BB /* ResponseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResponseViewController.m; sourceTree = "<group>"; };
 		42B2CCF118E5F20500A77C3E /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		42B2CCF318E5F67A00A77C3E /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CameraViewController.h; path = ../CameraViewController.h; sourceTree = "<group>"; };
 		42B2CCF418E5F67A00A77C3E /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CameraViewController.m; path = ../CameraViewController.m; sourceTree = "<group>"; };
@@ -197,6 +200,8 @@
 				42B2CCF418E5F67A00A77C3E /* CameraViewController.m */,
 				42CC8DA718CCE3F100E2CCAB /* AppDelegate.m */,
 				42CC8DA918CCE3F100E2CCAB /* Main_iPhone.storyboard */,
+				427A1E94191AC6D3006C19BB /* ResponseViewController.h */,
+				427A1E95191AC6D3006C19BB /* ResponseViewController.m */,
 				4267FFE71919759F0068FEA1 /* Ping.h */,
 				4267FFE81919759F0068FEA1 /* Ping.m */,
 				4233B1A51904388100432E71 /* NewUserViewController.h */,
@@ -363,6 +368,7 @@
 				423417CC18D217870086682B /* PicsViewController.m in Sources */,
 				423417C918D217640086682B /* PingViewController.m in Sources */,
 				42CC8DA418CCE3F100E2CCAB /* main.m in Sources */,
+				427A1E96191AC6D3006C19BB /* ResponseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

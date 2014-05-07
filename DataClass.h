@@ -15,6 +15,7 @@
 @property(nonatomic, retain)NSString *USERNAME;
 @property(nonatomic, retain)PFGeoPoint *LOCATION;
 @property(nonatomic, retain)NSMutableArray  *USERPINGS;
+
 +(DataClass*)getInstance;
 
 @end

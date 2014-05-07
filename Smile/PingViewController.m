@@ -8,6 +8,7 @@
 
 #import "PingViewController.h"
 #import "Ping.h"
+#import "ResponseViewController.h"
 
 @interface PingViewController ()
 
@@ -27,30 +28,6 @@
 
 
 - (void)viewWillAppear:(BOOL)animated{
-    /*
-    DataClass *obj = [DataClass getInstance];
-    PFQuery *query = [PFQuery queryWithClassName:@"Ping"];
-    [query whereKey:@"targetUser" equalTo:obj.USERNAME];
-    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
-        if (!error) {
-            // The find succeeded.
-            // Do something with the found objects
-            for (PFObject *object in objects) {
-                NSString *string = [NSString stringWithFormat:@"From: %@ Date and Time: %@", object[@"sentUser"], object[@"date"]];
-                PFUser *currentUser = [PFUser currentUser];
-                [currentUser addObject:string forKey:@"pings"];
-                [currentUser saveInBackground];
-                [object deleteInBackground];
-            }
-            [self.tableView reloadData];
-            
-        } else {
-            // Log details of the failure
-            NSLog(@"Error: %@ %@", error, [error userInfo]);
-            
-        }
-    }];
-     */
     [super viewWillAppear:animated];
     NSLog(@"viewWillAppear");
 }
@@ -102,8 +79,6 @@
 - (void) viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
 
-    
-    //[self.tableView reloadData];
 }
 
 #pragma mark Table Delegate
@@ -124,17 +99,13 @@
     
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cell"];
-        /*
-        PFUser *currentUser = [PFUser currentUser];
-        NSMutableArray *array = currentUser[@"pings"];
-        if(indexPath.row < [array count]){
-            cell.textLabel.text = (NSString *) [array objectAtIndex:indexPath.row];
-        }
-         */
     }
     DataClass *obj = [DataClass getInstance];
-    PFObject *ping = [obj.USERPINGS objectAtIndex:indexPath.row];
-    [cell.textLabel setText:ping[@"sentUser"]];
+    NSMutableDictionary *ping = [obj.USERPINGS objectAtIndex:indexPath.row];
+    NSString *string = [NSString stringWithFormat:@"From: %@", [ping objectForKey:@"sentUser"]];
+    NSString *dateString = [NSString stringWithFormat:@"%@", [ping objectForKey:@"date"]];
+    [cell.textLabel setText:string];
+    [cell.detailTextLabel setText:dateString];
         NSLog(@"array: %@", obj.USERPINGS);
     
     return cell;
@@ -144,6 +115,10 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    ResponseViewController *responseVC = [self.storyboard instantiateViewControllerWithIdentifier:@"ResponseViewController"];
+    responseVC.tableIndex = indexPath.row;
+    [self.navigationController pushViewController:responseVC animated:YES];
+    
 }
 
 
