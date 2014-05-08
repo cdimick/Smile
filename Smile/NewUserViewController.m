@@ -47,6 +47,7 @@
     user[@"location"] = point;
     user[@"karmaScore"] = @0;
     user[@"pings"] = [[NSMutableArray alloc] init];
+    user[@"photos"] = [[NSMutableArray alloc] init];
     
     [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
         if (!error) {

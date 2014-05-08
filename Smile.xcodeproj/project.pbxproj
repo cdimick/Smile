@@ -44,6 +44,7 @@
 		42CC8DC418CCE3F100E2CCAB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42CC8DC218CCE3F100E2CCAB /* InfoPlist.strings */; };
 		42CC8DC618CCE3F100E2CCAB /* SmileTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CC8DC518CCE3F100E2CCAB /* SmileTests.m */; };
 		42CC8DD118CCE5AC00E2CCAB /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CC8DD018CCE5AC00E2CCAB /* LoginViewController.m */; };
+		42E5CBDC191BF7EB006AFA23 /* nicolascage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42E5CBDB191BF7EB006AFA23 /* nicolascage.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +111,7 @@
 		42CC8DC518CCE3F100E2CCAB /* SmileTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmileTests.m; sourceTree = "<group>"; };
 		42CC8DCF18CCE5AC00E2CCAB /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		42CC8DD018CCE5AC00E2CCAB /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		42E5CBDB191BF7EB006AFA23 /* nicolascage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = nicolascage.jpg; path = ../../nicolascage.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,6 +230,7 @@
 		42CC8D9E18CCE3F100E2CCAB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				42E5CBDB191BF7EB006AFA23 /* nicolascage.jpg */,
 				42CC8D9F18CCE3F100E2CCAB /* Smile-Info.plist */,
 				42CC8DA018CCE3F100E2CCAB /* InfoPlist.strings */,
 				42CC8DA318CCE3F100E2CCAB /* main.m */,
@@ -336,6 +339,7 @@
 				42CC8DAE18CCE3F100E2CCAB /* Main_iPad.storyboard in Resources */,
 				42CC8DB318CCE3F100E2CCAB /* Images.xcassets in Resources */,
 				42CC8DAB18CCE3F100E2CCAB /* Main_iPhone.storyboard in Resources */,
+				42E5CBDC191BF7EB006AFA23 /* nicolascage.jpg in Resources */,
 				42CC8DA218CCE3F100E2CCAB /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

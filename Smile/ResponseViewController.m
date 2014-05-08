@@ -29,7 +29,8 @@
     [super viewDidLoad];
     DataClass *obj = [DataClass getInstance];
     NSMutableDictionary *ping = [obj.USERPINGS objectAtIndex:self.tableIndex];
-    [self.fromLabel setText:[ping objectForKey:@"sentUser"]];
+    NSString *fromString = [NSString stringWithFormat:@"From: %@", [ping objectForKey:@"sentUser"]];
+    [self.fromLabel setText:fromString];
     NSString *dateString = [NSString stringWithFormat:(@"%@"), [ping objectForKey:@"date"]];
     [self.dateLabel setText:dateString];
 	// Do any additional setup after loading the view.
@@ -42,8 +43,27 @@
 }
 
 - (IBAction)ignore:(id)sender {
+    DataClass *obj = [DataClass getInstance];
+    NSMutableDictionary *ping = [obj.USERPINGS objectAtIndex:self.tableIndex];
+    [obj.USERPINGS removeObjectAtIndex:self.tableIndex];
+    PFUser *currentUser = [PFUser currentUser];
+    [currentUser removeObject:ping forKey:@"pings"];
+    [currentUser saveInBackground];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (IBAction)reply:(id)sender {
+    DataClass *obj = [DataClass getInstance];
+    NSMutableDictionary *ping = [obj.USERPINGS objectAtIndex:self.tableIndex];
+    [obj.USERPINGS removeObjectAtIndex:self.tableIndex];
+    PFUser *currentUser = [PFUser currentUser];
+    [currentUser removeObject:ping forKey:@"pings"];
+    [currentUser saveInBackground];
+    PFObject *photo = [PFObject objectWithClassName:@"Photo"];
+    photo[@"sentUser"] = ping[@"targetUser"];
+    photo[@"targetUser"] = ping[@"sentUser"];
+    photo[@"date"] = [NSDate date];
+    [photo saveInBackground];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 @end

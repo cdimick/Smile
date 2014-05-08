@@ -37,14 +37,6 @@
             // The find succeeded.
             // Do something with the found objects
             for (PFObject *object in objects) {
-                //NSString *string = [NSString stringWithFormat:@"From: %@ Date and Time: %@", object[@"sentUser"], object[@"date"]];
-                /*
-                Ping *ping = [[Ping alloc] init];
-                ping.date = object[@"date"];
-                ping.sentUser = object[@"sentUser"];
-                ping.targetUser = object[@"targetUser"];
-                [obj.USERPINGS addObject:ping];
-                 */
                 NSLog(@"userPings: %@", obj.USERPINGS);
                 NSMutableDictionary *aPing = [[NSMutableDictionary alloc]init];
                 [aPing setValue:object[@"sentUser"] forKey:@"sentUser"];
@@ -64,6 +56,32 @@
         }
     }];
 	// Do any additional setup after loading the view.
+    obj.USERPHOTOS = currentUser[@"photos"];
+    PFQuery *photoQuery = [PFQuery queryWithClassName:@"Photo"];
+    [photoQuery whereKey:@"targetUser" equalTo:obj.USERNAME];
+    [photoQuery findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (!error) {
+            // The find succeeded.
+            // Do something with the found objects
+            for (PFObject *object in objects) {
+                NSLog(@"userPhotos: %@", obj.USERPHOTOS);
+                NSMutableDictionary *aPhoto = [[NSMutableDictionary alloc]init];
+                [aPhoto setValue:object[@"sentUser"] forKey:@"sentUser"];
+                [aPhoto setValue:object[@"targetUser"] forKey:@"targetUser"];
+                [aPhoto setValue:object[@"date"] forKey:@"date"];
+                [obj.USERPHOTOS addObject:aPhoto];
+                PFUser *currentUser = [PFUser currentUser];
+                [currentUser addObject:aPhoto forKey:@"photos"];
+                [currentUser saveInBackground];
+                [object deleteInBackground];
+            }
+            
+        } else {
+            // Log details of the failure
+            NSLog(@"Error: %@ %@", error, [error userInfo]);
+            
+        }
+    }];
 }
 
 - (void)didReceiveMemoryWarning

@@ -5,19 +5,19 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>A58616D1-7173-4ACE-B962-C07B6CFC56D6</string>
+	<string>02A5C8E9-1679-4723-8561-8EBBD12C4934</string>
 	<key>IDESourceControlProjectName</key>
 	<string>Smile</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>ACD690E7-A9EE-4AF9-94F8-4D852DE9D9AC</key>
+		<key>C01DE5B7-DDE3-46E5-AB48-CD64D33A8C73</key>
 		<string>https://github.com/cdimick/Smile.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Smile.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>ACD690E7-A9EE-4AF9-94F8-4D852DE9D9AC</key>
+		<key>C01DE5B7-DDE3-46E5-AB48-CD64D33A8C73</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>ACD690E7-A9EE-4AF9-94F8-4D852DE9D9AC</string>
+	<string>C01DE5B7-DDE3-46E5-AB48-CD64D33A8C73</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>ACD690E7-A9EE-4AF9-94F8-4D852DE9D9AC</string>
+			<string>C01DE5B7-DDE3-46E5-AB48-CD64D33A8C73</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Smile</string>
 		</dict>

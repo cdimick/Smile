@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface PicsViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+
+
+@property (readwrite,assign) NSUInteger tableIndex;
 
 @end
