@@ -98,7 +98,7 @@
                         <outlet property="login" destination="Xmk-nX-NjX" id="5Ar-9d-fj5"/>
                         <outlet property="password" destination="VEE-mr-FT8" id="Ucb-42-Mw9"/>
                         <outlet property="userName" destination="pGZ-c3-KzO" id="E9B-JT-aZ6"/>
-                        <segue destination="UF6-BW-Ai1" kind="custom" identifier="loggingIn" id="76l-NF-w7H"/>
+                        <segue destination="Y4z-5V-68A" kind="custom" identifier="loggingIn" id="VFs-Vn-HwU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hCD-Jd-YZR" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -158,7 +158,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CY6-L3-9P5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1196" y="631"/>
+            <point key="canvasLocation" x="1255" y="560"/>
         </scene>
         <!--Response View Controller-->
         <scene sceneID="BqP-BV-Das">
@@ -238,6 +238,36 @@
             </objects>
             <point key="canvasLocation" x="2038" y="593"/>
         </scene>
+        <!--Loading View Controller-->
+        <scene sceneID="HDi-Dp-zBh">
+            <objects>
+                <viewController id="Y4z-5V-68A" customClass="LoadingViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ACy-5I-2zt"/>
+                        <viewControllerLayoutGuide type="bottom" id="NwT-XR-Fbe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9TD-9I-pb7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Loading" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LrP-3q-H1b">
+                                <rect key="frame" x="129" y="259" width="62" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="UF6-BW-Ai1" kind="custom" identifier="loadApp" id="0eW-gY-OLh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wvp-l7-OvZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="495" y="988"/>
+        </scene>
         <!--Profile View Controller - Profile-->
         <scene sceneID="kvz-mw-8cX">
             <objects>
@@ -279,7 +309,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkW-AU-bDS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1196" y="1953"/>
+            <point key="canvasLocation" x="1298" y="1937"/>
         </scene>
         <!--New User View Controller-->
         <scene sceneID="hZL-In-sXS">
@@ -347,7 +377,7 @@
                         <outlet property="password" destination="sAv-sw-h8c" id="ZB9-jb-hAr"/>
                         <outlet property="submit" destination="7VR-2l-omx" id="Gul-M4-qvM"/>
                         <outlet property="userName" destination="yaJ-f0-aR5" id="y6a-aO-bSq"/>
-                        <segue destination="UF6-BW-Ai1" kind="custom" identifier="createNew" id="nCG-L4-lCj"/>
+                        <segue destination="Y4z-5V-68A" kind="custom" identifier="createNew" id="oIQ-u4-lS9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qPw-d3-jtB" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -378,7 +408,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ufV-Mq-jES" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="688" y="983"/>
+            <point key="canvasLocation" x="837" y="981"/>
         </scene>
         <!--Pic Me Up View Controller - Pics-->
         <scene sceneID="kwO-d7-h1Y">
@@ -418,7 +448,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FmP-Jp-qir" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1196" y="1284"/>
+            <point key="canvasLocation" x="1298" y="1283"/>
         </scene>
         <!--Pics View Controller-->
         <scene sceneID="2hu-gM-scc">
@@ -457,6 +487,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="76l-NF-w7H"/>
+        <segue reference="oIQ-u4-lS9"/>
     </inferredMetricsTieBreakers>
 </document>

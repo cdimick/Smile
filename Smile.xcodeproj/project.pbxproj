@@ -33,6 +33,7 @@
 		42B04CA9191D4CC00062027C /* devil.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42B04CA8191D4CC00062027C /* devil.jpg */; };
 		42B2CCF218E5F20500A77C3E /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B2CCF118E5F20500A77C3E /* MobileCoreServices.framework */; };
 		42B2CCF518E5F67A00A77C3E /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B2CCF418E5F67A00A77C3E /* CameraViewController.m */; };
+		42C36BA8191D5DF700B5A0E3 /* LoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C36BA7191D5DF700B5A0E3 /* LoadingViewController.m */; };
 		42CC8D9818CCE3F100E2CCAB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42CC8D9718CCE3F100E2CCAB /* Foundation.framework */; };
 		42CC8D9A18CCE3F100E2CCAB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42CC8D9918CCE3F100E2CCAB /* CoreGraphics.framework */; };
 		42CC8D9C18CCE3F100E2CCAB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42CC8D9B18CCE3F100E2CCAB /* UIKit.framework */; };
@@ -99,6 +100,8 @@
 		42B2CCF118E5F20500A77C3E /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		42B2CCF318E5F67A00A77C3E /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CameraViewController.h; path = ../CameraViewController.h; sourceTree = "<group>"; };
 		42B2CCF418E5F67A00A77C3E /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CameraViewController.m; path = ../CameraViewController.m; sourceTree = "<group>"; };
+		42C36BA6191D5DF700B5A0E3 /* LoadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingViewController.h; sourceTree = "<group>"; };
+		42C36BA7191D5DF700B5A0E3 /* LoadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingViewController.m; sourceTree = "<group>"; };
 		42CC8D9418CCE3F100E2CCAB /* Smile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42CC8D9718CCE3F100E2CCAB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		42CC8D9918CCE3F100E2CCAB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -212,6 +215,8 @@
 				42B2CCF418E5F67A00A77C3E /* CameraViewController.m */,
 				42CC8DA718CCE3F100E2CCAB /* AppDelegate.m */,
 				42CC8DA918CCE3F100E2CCAB /* Main_iPhone.storyboard */,
+				42C36BA6191D5DF700B5A0E3 /* LoadingViewController.h */,
+				42C36BA7191D5DF700B5A0E3 /* LoadingViewController.m */,
 				427A1E94191AC6D3006C19BB /* ResponseViewController.h */,
 				427A1E95191AC6D3006C19BB /* ResponseViewController.m */,
 				4267FFE71919759F0068FEA1 /* Ping.h */,
@@ -386,6 +391,7 @@
 				42CC8DB118CCE3F100E2CCAB /* ViewController.m in Sources */,
 				42CC8DA818CCE3F100E2CCAB /* AppDelegate.m in Sources */,
 				423417C618D210CC0086682B /* HomeViewController.m in Sources */,
+				42C36BA8191D5DF700B5A0E3 /* LoadingViewController.m in Sources */,
 				4233B1AB1904449300432E71 /* DataClass.m in Sources */,
 				42B2CCF518E5F67A00A77C3E /* CameraViewController.m in Sources */,
 				423417CF18D217CA0086682B /* PicMeUpViewController.m in Sources */,
