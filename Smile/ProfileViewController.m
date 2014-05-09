@@ -29,6 +29,28 @@
     [super viewDidLoad];
     PFUser *currentUser = [PFUser currentUser];
     DataClass *obj = [DataClass getInstance];
+    NSString *usernameString = [NSString stringWithFormat:@"Username: %@", currentUser[@"username"]];
+    [self.username setText:usernameString];
+    NSString *karmaString = [NSString stringWithFormat:@"Cookies: %@", currentUser[@"karmaScore"]];
+    [self.karmaScore setText:karmaString];
+    int cookies = [currentUser[@"karmaScore"] intValue];
+    UIImage *image;
+    if(cookies < -9){
+        image = [UIImage imageNamed:@"turd.jpg"];
+    }
+    else if(cookies < 0){
+        image = [UIImage imageNamed:@"devil.jpg"];
+    }
+    else if(cookies < 10){
+        image = [UIImage imageNamed:@"first.png"];
+    }
+    else if(cookies < 20){
+        image = [UIImage imageNamed:@"two.jpg"];
+    }
+    else{
+        image = [UIImage imageNamed:@"tres.jpg"];
+    }
+    [self.imageView setImage:image];
     obj.USERPINGS = currentUser[@"pings"];
     PFQuery *query = [PFQuery queryWithClassName:@"Ping"];
     [query whereKey:@"targetUser" equalTo:obj.USERNAME];

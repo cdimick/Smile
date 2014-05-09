@@ -26,6 +26,11 @@
 		423417D218D218370086682B /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 423417D118D218370086682B /* ProfileViewController.m */; };
 		4267FFE91919759F0068FEA1 /* Ping.m in Sources */ = {isa = PBXBuildFile; fileRef = 4267FFE81919759F0068FEA1 /* Ping.m */; };
 		427A1E96191AC6D3006C19BB /* ResponseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 427A1E95191AC6D3006C19BB /* ResponseViewController.m */; };
+		42B04CA1191D4B480062027C /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 42B04CA0191D4B480062027C /* first.png */; };
+		42B04CA3191D4C020062027C /* two.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42B04CA2191D4C020062027C /* two.jpg */; };
+		42B04CA5191D4C5C0062027C /* tres.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42B04CA4191D4C5C0062027C /* tres.jpg */; };
+		42B04CA7191D4C7C0062027C /* turd.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42B04CA6191D4C7C0062027C /* turd.jpg */; };
+		42B04CA9191D4CC00062027C /* devil.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42B04CA8191D4CC00062027C /* devil.jpg */; };
 		42B2CCF218E5F20500A77C3E /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B2CCF118E5F20500A77C3E /* MobileCoreServices.framework */; };
 		42B2CCF518E5F67A00A77C3E /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B2CCF418E5F67A00A77C3E /* CameraViewController.m */; };
 		42CC8D9818CCE3F100E2CCAB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42CC8D9718CCE3F100E2CCAB /* Foundation.framework */; };
@@ -86,6 +91,11 @@
 		4267FFE81919759F0068FEA1 /* Ping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ping.m; sourceTree = "<group>"; };
 		427A1E94191AC6D3006C19BB /* ResponseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResponseViewController.h; sourceTree = "<group>"; };
 		427A1E95191AC6D3006C19BB /* ResponseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResponseViewController.m; sourceTree = "<group>"; };
+		42B04CA0191D4B480062027C /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = first.png; path = ../../first.png; sourceTree = "<group>"; };
+		42B04CA2191D4C020062027C /* two.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = two.jpg; path = ../../two.jpg; sourceTree = "<group>"; };
+		42B04CA4191D4C5C0062027C /* tres.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = tres.jpg; path = ../../tres.jpg; sourceTree = "<group>"; };
+		42B04CA6191D4C7C0062027C /* turd.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = turd.jpg; path = ../../turd.jpg; sourceTree = "<group>"; };
+		42B04CA8191D4CC00062027C /* devil.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = devil.jpg; path = ../../devil.jpg; sourceTree = "<group>"; };
 		42B2CCF118E5F20500A77C3E /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		42B2CCF318E5F67A00A77C3E /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CameraViewController.h; path = ../CameraViewController.h; sourceTree = "<group>"; };
 		42B2CCF418E5F67A00A77C3E /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CameraViewController.m; path = ../CameraViewController.m; sourceTree = "<group>"; };
@@ -230,6 +240,11 @@
 		42CC8D9E18CCE3F100E2CCAB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				42B04CA0191D4B480062027C /* first.png */,
+				42B04CA6191D4C7C0062027C /* turd.jpg */,
+				42B04CA4191D4C5C0062027C /* tres.jpg */,
+				42B04CA2191D4C020062027C /* two.jpg */,
+				42B04CA8191D4CC00062027C /* devil.jpg */,
 				42E5CBDB191BF7EB006AFA23 /* nicolascage.jpg */,
 				42CC8D9F18CCE3F100E2CCAB /* Smile-Info.plist */,
 				42CC8DA018CCE3F100E2CCAB /* InfoPlist.strings */,
@@ -336,10 +351,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42B04CA3191D4C020062027C /* two.jpg in Resources */,
 				42CC8DAE18CCE3F100E2CCAB /* Main_iPad.storyboard in Resources */,
 				42CC8DB318CCE3F100E2CCAB /* Images.xcassets in Resources */,
 				42CC8DAB18CCE3F100E2CCAB /* Main_iPhone.storyboard in Resources */,
+				42B04CA7191D4C7C0062027C /* turd.jpg in Resources */,
 				42E5CBDC191BF7EB006AFA23 /* nicolascage.jpg in Resources */,
+				42B04CA9191D4CC00062027C /* devil.jpg in Resources */,
+				42B04CA5191D4C5C0062027C /* tres.jpg in Resources */,
+				42B04CA1191D4B480062027C /* first.png in Resources */,
 				42CC8DA218CCE3F100E2CCAB /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

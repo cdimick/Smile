@@ -11,5 +11,8 @@
 #import "DataClass.h"
 
 @interface ProfileViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *username;
+@property (weak, nonatomic) IBOutlet UILabel *karmaScore;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
 @end
