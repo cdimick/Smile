@@ -34,6 +34,12 @@
 		42B2CCF218E5F20500A77C3E /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B2CCF118E5F20500A77C3E /* MobileCoreServices.framework */; };
 		42B2CCF518E5F67A00A77C3E /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B2CCF418E5F67A00A77C3E /* CameraViewController.m */; };
 		42C36BA8191D5DF700B5A0E3 /* LoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C36BA7191D5DF700B5A0E3 /* LoadingViewController.m */; };
+		42C36BAB191D6E2B00B5A0E3 /* RatingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C36BAA191D6E2B00B5A0E3 /* RatingsViewController.m */; };
+		42C36BAD191D70DA00B5A0E3 /* negone.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42C36BAC191D70DA00B5A0E3 /* negone.jpg */; };
+		42C36BAF191D71E800B5A0E3 /* zero.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42C36BAE191D71E800B5A0E3 /* zero.jpg */; };
+		42C36BB1191D720300B5A0E3 /* twopoints.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42C36BB0191D720300B5A0E3 /* twopoints.jpg */; };
+		42C36BB3191D721B00B5A0E3 /* three.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42C36BB2191D721B00B5A0E3 /* three.jpg */; };
+		42C36BB5191D725700B5A0E3 /* four.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42C36BB4191D725700B5A0E3 /* four.jpg */; };
 		42CC8D9818CCE3F100E2CCAB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42CC8D9718CCE3F100E2CCAB /* Foundation.framework */; };
 		42CC8D9A18CCE3F100E2CCAB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42CC8D9918CCE3F100E2CCAB /* CoreGraphics.framework */; };
 		42CC8D9C18CCE3F100E2CCAB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42CC8D9B18CCE3F100E2CCAB /* UIKit.framework */; };
@@ -102,6 +108,13 @@
 		42B2CCF418E5F67A00A77C3E /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CameraViewController.m; path = ../CameraViewController.m; sourceTree = "<group>"; };
 		42C36BA6191D5DF700B5A0E3 /* LoadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingViewController.h; sourceTree = "<group>"; };
 		42C36BA7191D5DF700B5A0E3 /* LoadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingViewController.m; sourceTree = "<group>"; };
+		42C36BA9191D6E2B00B5A0E3 /* RatingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RatingsViewController.h; sourceTree = "<group>"; };
+		42C36BAA191D6E2B00B5A0E3 /* RatingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RatingsViewController.m; sourceTree = "<group>"; };
+		42C36BAC191D70DA00B5A0E3 /* negone.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = negone.jpg; path = ../../negone.jpg; sourceTree = "<group>"; };
+		42C36BAE191D71E800B5A0E3 /* zero.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = zero.jpg; path = ../../zero.jpg; sourceTree = "<group>"; };
+		42C36BB0191D720300B5A0E3 /* twopoints.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = twopoints.jpg; path = ../../twopoints.jpg; sourceTree = "<group>"; };
+		42C36BB2191D721B00B5A0E3 /* three.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = three.jpg; path = ../../three.jpg; sourceTree = "<group>"; };
+		42C36BB4191D725700B5A0E3 /* four.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = four.jpg; path = ../../four.jpg; sourceTree = "<group>"; };
 		42CC8D9418CCE3F100E2CCAB /* Smile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42CC8D9718CCE3F100E2CCAB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		42CC8D9918CCE3F100E2CCAB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -215,6 +228,8 @@
 				42B2CCF418E5F67A00A77C3E /* CameraViewController.m */,
 				42CC8DA718CCE3F100E2CCAB /* AppDelegate.m */,
 				42CC8DA918CCE3F100E2CCAB /* Main_iPhone.storyboard */,
+				42C36BA9191D6E2B00B5A0E3 /* RatingsViewController.h */,
+				42C36BAA191D6E2B00B5A0E3 /* RatingsViewController.m */,
 				42C36BA6191D5DF700B5A0E3 /* LoadingViewController.h */,
 				42C36BA7191D5DF700B5A0E3 /* LoadingViewController.m */,
 				427A1E94191AC6D3006C19BB /* ResponseViewController.h */,
@@ -245,6 +260,11 @@
 		42CC8D9E18CCE3F100E2CCAB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				42C36BB2191D721B00B5A0E3 /* three.jpg */,
+				42C36BB4191D725700B5A0E3 /* four.jpg */,
+				42C36BB0191D720300B5A0E3 /* twopoints.jpg */,
+				42C36BAE191D71E800B5A0E3 /* zero.jpg */,
+				42C36BAC191D70DA00B5A0E3 /* negone.jpg */,
 				42B04CA0191D4B480062027C /* first.png */,
 				42B04CA6191D4C7C0062027C /* turd.jpg */,
 				42B04CA4191D4C5C0062027C /* tres.jpg */,
@@ -357,15 +377,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				42B04CA3191D4C020062027C /* two.jpg in Resources */,
+				42C36BB5191D725700B5A0E3 /* four.jpg in Resources */,
+				42C36BAD191D70DA00B5A0E3 /* negone.jpg in Resources */,
+				42C36BB3191D721B00B5A0E3 /* three.jpg in Resources */,
 				42CC8DAE18CCE3F100E2CCAB /* Main_iPad.storyboard in Resources */,
 				42CC8DB318CCE3F100E2CCAB /* Images.xcassets in Resources */,
 				42CC8DAB18CCE3F100E2CCAB /* Main_iPhone.storyboard in Resources */,
 				42B04CA7191D4C7C0062027C /* turd.jpg in Resources */,
 				42E5CBDC191BF7EB006AFA23 /* nicolascage.jpg in Resources */,
+				42C36BAF191D71E800B5A0E3 /* zero.jpg in Resources */,
 				42B04CA9191D4CC00062027C /* devil.jpg in Resources */,
 				42B04CA5191D4C5C0062027C /* tres.jpg in Resources */,
 				42B04CA1191D4B480062027C /* first.png in Resources */,
 				42CC8DA218CCE3F100E2CCAB /* InfoPlist.strings in Resources */,
+				42C36BB1191D720300B5A0E3 /* twopoints.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,6 +418,7 @@
 				423417C618D210CC0086682B /* HomeViewController.m in Sources */,
 				42C36BA8191D5DF700B5A0E3 /* LoadingViewController.m in Sources */,
 				4233B1AB1904449300432E71 /* DataClass.m in Sources */,
+				42C36BAB191D6E2B00B5A0E3 /* RatingsViewController.m in Sources */,
 				42B2CCF518E5F67A00A77C3E /* CameraViewController.m in Sources */,
 				423417CF18D217CA0086682B /* PicMeUpViewController.m in Sources */,
 				423417CC18D217870086682B /* PicsViewController.m in Sources */,

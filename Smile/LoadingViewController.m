@@ -29,10 +29,10 @@
 {
     [super viewDidLoad];
     self.navigationItem.hidesBackButton = YES;
-    [NSTimer scheduledTimerWithTimeInterval:5 target:self selector:@selector(loadApp:) userInfo:nil repeats:NO];
+    [NSTimer scheduledTimerWithTimeInterval:2 target:self selector:@selector(loadApp:) userInfo:nil repeats:NO];
     PFUser *currentUser = [PFUser currentUser];
     DataClass *obj = [DataClass getInstance];
-    PFQuery *query = [PFQuery queryWithClassName:@"Cookies"];
+    PFQuery *query = [PFQuery queryWithClassName:@"Cookie"];
     [query whereKey:@"targetUser" equalTo:obj.USERNAME];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if (!error) {
@@ -66,6 +66,5 @@
 -(void)loadApp:(NSTimer *)pointer{
     [self performSegueWithIdentifier:@"loadApp" sender:nil];
 }
-
 
 @end

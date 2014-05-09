@@ -14,5 +14,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *username;
 @property (weak, nonatomic) IBOutlet UILabel *karmaScore;
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet UIButton *logout;
+
+
+- (IBAction)logout:(id)sender;
 
 @end

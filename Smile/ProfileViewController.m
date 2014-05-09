@@ -112,4 +112,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)logout:(id)sender {
+    [self.navigationController popToRootViewControllerAnimated:YES];
+    [PFUser logOut];
+    PFUser *currentUser = [PFUser currentUser];
+}
 @end

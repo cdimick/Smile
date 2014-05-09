@@ -8,6 +8,7 @@
 
 #import "PicsViewController.h"
 #import "DataClass.h"
+#import "RatingsViewController.h"
 
 @interface PicsViewController ()
 
@@ -27,6 +28,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.navigationItem.hidesBackButton = YES;
     [NSTimer scheduledTimerWithTimeInterval:5 target:self selector:@selector(goBack:) userInfo:nil repeats:NO];
 	// Do any additional setup after loading the view.
 }
@@ -40,11 +42,15 @@
 -(void)goBack:(NSTimer *)pointer{
     DataClass *obj = [DataClass getInstance];
     NSMutableDictionary *photo = [obj.USERPHOTOS objectAtIndex:self.tableIndex];
+    NSString *sentUser = [photo objectForKey:@"sentUser"];
     [obj.USERPHOTOS removeObjectAtIndex:self.tableIndex];
     PFUser *currentUser = [PFUser currentUser];
     [currentUser removeObject:photo forKey:@"photos"];
     [currentUser saveInBackground];
-    [self.navigationController popViewControllerAnimated:YES];
+    //[self.navigationController popViewControllerAnimated:YES];
+    RatingsViewController *ratingsVC = [self.storyboard instantiateViewControllerWithIdentifier:@"RatingsViewController"];
+    ratingsVC.targetUser = sentUser;
+    [self.navigationController pushViewController:ratingsVC animated:YES];
 }
 
 @end
