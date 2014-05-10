@@ -33,6 +33,10 @@
 		42B04CA9191D4CC00062027C /* devil.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42B04CA8191D4CC00062027C /* devil.jpg */; };
 		42B2CCF218E5F20500A77C3E /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B2CCF118E5F20500A77C3E /* MobileCoreServices.framework */; };
 		42B2CCF518E5F67A00A77C3E /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B2CCF418E5F67A00A77C3E /* CameraViewController.m */; };
+		42BA687E191E9B8100038A9F /* cdimick.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42BA687B191E9B8100038A9F /* cdimick.jpg */; };
+		42BA687F191E9B8100038A9F /* cmorgan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42BA687C191E9B8100038A9F /* cmorgan.jpg */; };
+		42BA6880191E9B8100038A9F /* suman.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42BA687D191E9B8100038A9F /* suman.jpg */; };
+		42BA6882191E9B9700038A9F /* msanders.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42BA6881191E9B9700038A9F /* msanders.jpg */; };
 		42C36BA8191D5DF700B5A0E3 /* LoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C36BA7191D5DF700B5A0E3 /* LoadingViewController.m */; };
 		42C36BAB191D6E2B00B5A0E3 /* RatingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C36BAA191D6E2B00B5A0E3 /* RatingsViewController.m */; };
 		42C36BAD191D70DA00B5A0E3 /* negone.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42C36BAC191D70DA00B5A0E3 /* negone.jpg */; };
@@ -106,6 +110,10 @@
 		42B2CCF118E5F20500A77C3E /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		42B2CCF318E5F67A00A77C3E /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CameraViewController.h; path = ../CameraViewController.h; sourceTree = "<group>"; };
 		42B2CCF418E5F67A00A77C3E /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CameraViewController.m; path = ../CameraViewController.m; sourceTree = "<group>"; };
+		42BA687B191E9B8100038A9F /* cdimick.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = cdimick.jpg; path = ../../cdimick.jpg; sourceTree = "<group>"; };
+		42BA687C191E9B8100038A9F /* cmorgan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = cmorgan.jpg; path = ../../cmorgan.jpg; sourceTree = "<group>"; };
+		42BA687D191E9B8100038A9F /* suman.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = suman.jpg; path = ../../suman.jpg; sourceTree = "<group>"; };
+		42BA6881191E9B9700038A9F /* msanders.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = msanders.jpg; path = ../../msanders.jpg; sourceTree = "<group>"; };
 		42C36BA6191D5DF700B5A0E3 /* LoadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingViewController.h; sourceTree = "<group>"; };
 		42C36BA7191D5DF700B5A0E3 /* LoadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingViewController.m; sourceTree = "<group>"; };
 		42C36BA9191D6E2B00B5A0E3 /* RatingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RatingsViewController.h; sourceTree = "<group>"; };
@@ -260,6 +268,10 @@
 		42CC8D9E18CCE3F100E2CCAB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				42BA6881191E9B9700038A9F /* msanders.jpg */,
+				42BA687B191E9B8100038A9F /* cdimick.jpg */,
+				42BA687C191E9B8100038A9F /* cmorgan.jpg */,
+				42BA687D191E9B8100038A9F /* suman.jpg */,
 				42C36BB2191D721B00B5A0E3 /* three.jpg */,
 				42C36BB4191D725700B5A0E3 /* four.jpg */,
 				42C36BB0191D720300B5A0E3 /* twopoints.jpg */,
@@ -376,6 +388,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42BA687F191E9B8100038A9F /* cmorgan.jpg in Resources */,
 				42B04CA3191D4C020062027C /* two.jpg in Resources */,
 				42C36BB5191D725700B5A0E3 /* four.jpg in Resources */,
 				42C36BAD191D70DA00B5A0E3 /* negone.jpg in Resources */,
@@ -385,11 +398,14 @@
 				42CC8DAB18CCE3F100E2CCAB /* Main_iPhone.storyboard in Resources */,
 				42B04CA7191D4C7C0062027C /* turd.jpg in Resources */,
 				42E5CBDC191BF7EB006AFA23 /* nicolascage.jpg in Resources */,
+				42BA6880191E9B8100038A9F /* suman.jpg in Resources */,
 				42C36BAF191D71E800B5A0E3 /* zero.jpg in Resources */,
 				42B04CA9191D4CC00062027C /* devil.jpg in Resources */,
 				42B04CA5191D4C5C0062027C /* tres.jpg in Resources */,
 				42B04CA1191D4B480062027C /* first.png in Resources */,
+				42BA6882191E9B9700038A9F /* msanders.jpg in Resources */,
 				42CC8DA218CCE3F100E2CCAB /* InfoPlist.strings in Resources */,
+				42BA687E191E9B8100038A9F /* cdimick.jpg in Resources */,
 				42C36BB1191D720300B5A0E3 /* twopoints.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

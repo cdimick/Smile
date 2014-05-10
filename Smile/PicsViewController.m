@@ -29,6 +29,27 @@
 {
     [super viewDidLoad];
     self.navigationItem.hidesBackButton = YES;
+    [[self navigationController] setNavigationBarHidden:YES];
+    DataClass *obj = [DataClass getInstance];
+    NSMutableDictionary *photo = [obj.USERPHOTOS objectAtIndex:self.tableIndex];
+    NSString *sentUser = [photo objectForKey:@"sentUser"];
+    UIImage *image;
+    if([sentUser isEqualToString:@"cdimick"]){
+        image = [UIImage imageNamed:@"cdimick.jpg"];
+    }
+    else if([sentUser isEqualToString:@"sbanerjee"] || [sentUser isEqualToString:@"sbanerjee1"]){
+        image = [UIImage imageNamed:@"suman.jpg"];
+    }
+    else if([sentUser isEqualToString:@"msanders"] || [sentUser isEqualToString:@"msanders1"]){
+        image = [UIImage imageNamed:@"msanders.jpg"];
+    }
+    else if([sentUser isEqualToString:@"cmorgan"]){
+        image = [UIImage imageNamed:@"cmorgan.jpg"];
+    }
+    else{
+        image = [UIImage imageNamed:@"nicolascage.jpg"];
+    }
+    [self.imageView setImage:image];
     [NSTimer scheduledTimerWithTimeInterval:5 target:self selector:@selector(goBack:) userInfo:nil repeats:NO];
 	// Do any additional setup after loading the view.
 }

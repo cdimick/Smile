@@ -25,11 +25,19 @@
     return self;
 }
 
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    self.label.text = @"";
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.view.backgroundColor = [[UIColor alloc] initWithRed:255.0/255.0 green:165.0/255.0 blue:0.0/255.0 alpha:1.0];
     self.userName.delegate = self;
     self.password.delegate = self;
+    self.userName.backgroundColor = [[UIColor alloc] initWithRed:253.0/255.0 green:198.0/255.0 blue:137.0/255.0 alpha:1.0];
+    self.password.backgroundColor = [[UIColor alloc] initWithRed:253.0/255.0 green:198.0/255.0 blue:137.0/255.0 alpha:1.0];
 	// Do any additional setup after loading the view.
 }
 
@@ -40,6 +48,7 @@
 }
 
 - (IBAction)submit:(id)sender {
+    [self.view endEditing:YES];
     PFUser *user = [PFUser user];
     user.username = self.userName.text;
     user.password = self.password.text;

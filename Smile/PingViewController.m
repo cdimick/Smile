@@ -9,6 +9,7 @@
 #import "PingViewController.h"
 #import "Ping.h"
 #import "ResponseViewController.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface PingViewController ()
 
@@ -36,6 +37,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.view.backgroundColor = [[UIColor alloc] initWithRed:255.0/255.0 green:165.0/255.0 blue:0.0/255.0 alpha:1.0];
     NSLog(@"View Did Load");
 	// Do any additional setup after loading the view.
 }

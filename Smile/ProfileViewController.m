@@ -27,6 +27,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.view.backgroundColor = [[UIColor alloc] initWithRed:255.0/255.0 green:165.0/255.0 blue:0.0/255.0 alpha:1.0];
     PFUser *currentUser = [PFUser currentUser];
     DataClass *obj = [DataClass getInstance];
     NSString *usernameString = [NSString stringWithFormat:@"Username: %@", currentUser[@"username"]];

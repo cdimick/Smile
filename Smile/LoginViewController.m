@@ -23,11 +23,20 @@
     return self;
 }
 
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    self.password.text = @"";
+    self.label.text = @"";
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.view.backgroundColor = [[UIColor alloc] initWithRed:255.0/255.0 green:165.0/255.0 blue:0.0/255.0 alpha:1.0];
     self.userName.delegate = self;
     self.password.delegate = self;
+    self.userName.backgroundColor = [[UIColor alloc] initWithRed:253.0/255.0 green:198.0/255.0 blue:137.0/255.0 alpha:1.0];
+    self.password.backgroundColor = [[UIColor alloc] initWithRed:253.0/255.0 green:198.0/255.0 blue:137.0/255.0 alpha:1.0];
 	// Do any additional setup after loading the view.
 }
 
@@ -41,6 +50,7 @@
  * Logs the user in. Checks Parse if the username and password is in the database. If not, error is received.
  */
 - (IBAction)login:(id)sender {
+    [self.view endEditing:YES];
     [PFUser logInWithUsernameInBackground:self.userName.text password:self.password.text block:^(PFUser *user, NSError *error) {
         if (user) {
             // Do stuff after successful login.

@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface LoadingViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *message;
 
 @end
