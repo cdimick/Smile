@@ -153,6 +153,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42CC8D9818CCE3F100E2CCAB /* Foundation.framework in Frameworks */,
 				421E2DA1190044F500D2A3EB /* SystemConfiguration.framework in Frameworks */,
 				421E2D9F190044EC00D2A3EB /* StoreKit.framework in Frameworks */,
 				421E2D9D190044E200D2A3EB /* Security.framework in Frameworks */,
@@ -164,7 +165,6 @@
 				421E2D951900449100D2A3EB /* CFNetwork.framework in Frameworks */,
 				421E2D931900448700D2A3EB /* AudioToolbox.framework in Frameworks */,
 				42CC8D9C18CCE3F100E2CCAB /* UIKit.framework in Frameworks */,
-				42CC8D9818CCE3F100E2CCAB /* Foundation.framework in Frameworks */,
 				421E2D911900444E00D2A3EB /* Parse.framework in Frameworks */,
 				421E2D8F1900443100D2A3EB /* Parse.framework in Frameworks */,
 			);
